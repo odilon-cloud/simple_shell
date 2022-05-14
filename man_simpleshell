@@ -1,0 +1,109 @@
+.TH HSH 1 "May 2022" Version(0.1) "SIMPLE SHELL MAN PAGE"
+
+.SH NAME
+
+.PP
+
+.B hsh - Simple Shell
+
+.PP
+
+.SH SYNOPSIS
+
+.PP
+The simple shell is a simplified iteration of a command line interpreter, similar to
+
+.B bash or dash.
+
+.I FORMAT [ARGUMENT]...
+
+.PP
+
+.SH OPTIONS
+
+.PP
+.B Simple Shell operates in both
+
+.I interactive and
+
+.I non-interactive mode. The user may initiate
+
+.B simple shell and begin working or initate
+
+.B simple shell using commands meant to be run by the program.
+
+.PP
+
+.SH ARGUMENTS
+
+.PP
+
+The first argument, argument 0 is understood to be the command to be run by
+
+.B simple shell
+
+and arguments following as modifiers or options.
+
+.SH INVOCATION
+
+.B simple shell
+
+may be invoked with the same functionality in
+
+.I interactive
+
+or
+
+.I non-interactive
+
+mode.  The user 
+may quit the program by typing "exit", "Ctrl + D", or "Ctrl + C" on the command line.
+
+When the program quits or a command has been executed,
+
+.B simple shell
+
+returns with a new prompt: "$ "
+
+
+.B Examples
+
+.IP
+
+
+$./hsh
+
+
+$pwd
+
+
+/home/vagrant/simple_shell
+
+
+$
+
+
+$/bin/pwd
+
+
+/home/vagrant/simple_shell
+
+
+$
+
+$./hsh
+
+$ls
+
+AUTHORS    auxiliar.c  case_fun.c    errors.c  simpleshell.h
+
+README.md  builder.c   compare_ex.c  shell.c   token_read.c
+
+$
+
+$/bin/ls
+
+
+AUTHORS    auxiliar.c  case_fun.c    errors.c  simpleshell.h
+
+README.md  builder.c   compare_ex.c  shell.c   token_read.c
