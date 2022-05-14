@@ -8,7 +8,7 @@
  */
 int semicolon(char *line)
 {
-	char *one_token, **total, **tokens;
+	char *pt_token, **total, **tokens;
 	int buffer = 1024, status = 1, i = 0, j = 0;
 
 	total = malloc(buffer * sizeof(char *));
@@ -17,12 +17,12 @@ int semicolon(char *line)
 	{
 		exit(EXIT_FAILURE);
 	}
-	one_token = strtok(line, ";");
-	while (one_token)
+	pt_token = strtok(line, ";");
+	while (pt_token)
 	{
-		total[i] = one_token;
+		total[i] = pt_token;
 		i++;
-		one_token = strtok(NULL, ";");
+		pt_token = strtok(NULL, ";");
 	}
 	total[i] = NULL;
 	if (total[1] == NULL)
