@@ -107,3 +107,95 @@ $/bin/ls
 AUTHORS    auxiliar.c  case_fun.c    errors.c  simpleshell.h
 
 README.md  builder.c   compare_ex.c  shell.c   token_read.c
+
+$
+
+.PP
+
+.SH RESERVED WORDS
+
+.B exit:
+
+quits the program, exits the shell.
+
+
+.B env:
+
+prints the environment variables
+
+.PP
+
+.SH FILES
+
+.PP
+
+.I simpleshell.h
+
+- In this header file all the necessary libraries and function prototypes are stored, as well as the environ.
+
+.PP
+
+.I shell.c
+
+- This file contains the main function of this shell, including the function in charge of handling signs.
+
+.PP
+
+.I token_read.c
+
+- Contains the function that reads the line of the standard input and the tokenizer function as well, which return their result to the main.
+
+.PP
+
+.I compare_ex.c
+
+ In this file there is a function in charge of comparing if the tokens are built-in or belong to the PATH, executing them respectively.
+
+.PP
+
+.I case_fun.c
+
+- Contains the semicolon function.
+
+.PP
+
+.I builder.c
+
+- Contains Built-in functions.
+
+.PP
+
+.I auxiliar.c
+
+- Contains all the auxiliary functions that I need to carry out various processes.
+
+.PP
+
+.I errors.c
+
+- Contains the function in charge of the error outputs.
+
+.PP
+
+.SH BUGS
+
+.PP
+
+.B Simple Shell:
+
+.PP
+
+
+.PP
+
+.SH AUTHORS
+
+Written by:
+
+.PP
+
+-Irambona odilon Vaillant
+
+.PP
+
+-Uwineza bienheureuse. 
